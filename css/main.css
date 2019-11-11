@@ -4,7 +4,28 @@ body{
 	line-height: 1.5;
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 500;
+	margin: 0px;
+	padding: 0px;
 	overflow: auto;
+}
+
+/*LOADER*/
+#loader{
+	height: 100%;
+	width: 100%;
+	background-color:#0e29f7;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+}
+
+.loader-img img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .center{
@@ -67,7 +88,7 @@ header .navlist ul li a:hover{
 
 .hero{
 	background-color: #eee;
-	padding: 171.0667px 0px 0px 113.83px;
+	padding: 100px 0px 0px 113.83px;
 	overflow: auto;
 }
 
@@ -100,7 +121,7 @@ header .navlist ul li a:hover{
 
 .hero .hero-left .intro-video{
 	color: #000000;
-	padding: 20px 0px;
+	padding: 50px 0px;
 }
 
 .hero .hero-left .intro-video .play-icon{
@@ -134,7 +155,8 @@ header .navlist ul li a:hover{
 }
 
 .hero .hero-right .circle-container{
-	width: 242.7%;
+	/*width: 240.3%;*/
+	width: 320.33%;
 	height: 455.33px;
 	position: relative;
 	transition: left 2s;
@@ -164,39 +186,47 @@ header .navlist ul li a:hover{
 	z-index: 20;
 }
 
-.bottom-container{
-	top: -20px;
-	position: relative;
+.circle-container .circle4{
+	margin: 0;
 }
 
-.slider-button{
-	display: inline-block;
-	height: 10px;
-	width: 10px;
-	border-radius: 5px;
-	background-color: #ffffff;
+.bottom-container ul{
+	padding: 0;
+	margin: 0;
 }
 
-/*.slider-arrow h3{
+.bottom-container ul li{
+	list-style: none;
+	padding: 40px 0;
+	margin: 0;
 	display: inline-block;
-	font-size: 22.7667px;
 }
 
-.slider-arrow .arrow{
-	display: inline-block;
-	font-size: 30px;
+.bottom-container ul li a{
+	text-decoration: none;
+	color: #0e29f7;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	padding-left: 50px;
+	line-height: 1.5;
 }
-*/
-.slider-circle-1:target ~ .circle-container{
+
+#slider-circle-1:target ~ .circle-container{
 	left: 0%;
 }
 
-.slider-circle-1:target ~ .circle-container{
+#slider-circle-2:target ~ .circle-container{
 	left: -80.9%;
 }
 
-.slider-circle-1:target ~ .circle-container{
-	left: -161.8%;
+#slider-circle-3:target ~ .circle-container{
+	left: -161.8%; 
+}
+
+.video-circle{
+	border-radius: 50%;
+	object-fit: cover;
 }
 
 .quote{
@@ -204,7 +234,7 @@ header .navlist ul li a:hover{
 }
 
 .quote .quote-div{
-	padding: 91.0667px 0px;
+	padding: 80px 0px;
 }
 
 .quote .center h1{
@@ -226,7 +256,7 @@ header .navlist ul li a:hover{
 }
 
 .advantages .why{
-	padding: 91.0667px 0px;
+	padding: 80px 0px;
 }
 
 .advantages .why .box{
@@ -282,7 +312,7 @@ header .navlist ul li a:hover{
 }
 
 .conclusion .conclusion-div{
-	padding: 91.0667px 0px;
+	padding: 80px 0px;
 	overflow: auto;
 }
 
@@ -318,7 +348,7 @@ header .navlist ul li a:hover{
 }
 
 .footer .center .upper{
-	padding-top: 91.0667px;
+	padding-top: 80px;
 	font-size: 13.2805px;
 	overflow: auto;
 }
@@ -428,7 +458,6 @@ header .navlist ul li a:hover{
 .about-floater{
 	width: 50%;
 	float: left;
-	margin-bottom: 91.0667px;
 }
 
 .about-floater h1{
@@ -436,19 +465,23 @@ header .navlist ul li a:hover{
 	font-weight: 900;
 	color: #0e29f7;
 	text-align: left;
-	opacity: 0.7;
 }
 
 .recycle{
-	padding-top: 171.0667px;
+	padding-top: 100px;
 	background-color: #eee;
+}
+
+.recycle p, .water p, .cut-costs p{
+	padding: 108px 0;
+	margin: 0;
 }
 
 .water{
 	background-color: #eee;
 }
 
-.water strong{
+.water h1{
 	color: #808080;
 	float: right;
 }
