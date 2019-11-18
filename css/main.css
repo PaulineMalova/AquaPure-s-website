@@ -490,3 +490,20 @@ header .navlist ul li a:hover{
 	background-color: #eee;
 	border-bottom: solid 0.5px #808080;
 }
+
+/* ORDER.HTML */
+.order{
+	background-color: #eee;
+	padding: 100px 0px 60px 0px;
+}
+
+.order-body{
+	width: 1125px;
+	margin: 0 auto;
+}
+
+.image-row{
+	background-image: url(../img/product.png);
+	background-repeat: no-repeat;
+	background-position:right;
+}
