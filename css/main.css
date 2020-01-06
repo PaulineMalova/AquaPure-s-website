@@ -50,13 +50,17 @@ header{
 }
 
 header .header-cont{
-	padding: 28px 0px;
 	background-color: #eee;
 }
 
 header .logo{
 	float: left;
 	width: 100px;
+	padding-top: 5px;
+}
+
+header .navlist{
+	padding: 28px 0px;
 }
 
 header .navlist ul{
@@ -157,7 +161,7 @@ header .navlist ul li a:hover{
 .hero .hero-right .circle-container{
 	/*width: 240.3%;*/
 	width: 320.33%;
-	height: 455.33px;
+	height: 440px;
 	position: relative;
 	transition: left 2s;
 	-webkit-transition: left 2s;
@@ -166,8 +170,8 @@ header .navlist ul li a:hover{
 }
 
 .slider-circle{
-	width: 455.33px;
-	height: 455.33px;
+	width: 440px;
+	height: 440px;
 	border-radius: 50%;
 	background-color: #0e29f7;
 	padding: 0;
@@ -175,15 +179,6 @@ header .navlist ul li a:hover{
 	margin-right: 102px;
 	overflow: hidden;
 	z-index: 1;
-}
-
-.smaller-circle{
-	width: 250.42px;
-	height: 250.42px;
-	border-radius: 50%;
-	background-color: #eee;
-	margin: 102.455px auto;
-	z-index: 20;
 }
 
 .circle-container .circle4{
